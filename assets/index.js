@@ -61,36 +61,36 @@ window.addEventListener('scroll', (ev) => {
     if(nearestDivIndex == 0){
         NavigatorIndicatorUp.innerHTML= '&nbsp;'
         fadeUp.style.opacity = 0
-        NavigationIndicator.children[3].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.svg'
-        NavigationIndicator.children[1].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.svg'
-        NavigationIndicator.children[2].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.svg'
-        NavigationIndicator.children[0].children[1].src = 'imgs/svgs/Navigator/Navigation Current Indicator.svg'
+        NavigationIndicator.children[3].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.webp'
+        NavigationIndicator.children[1].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.webp'
+        NavigationIndicator.children[2].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.webp'
+        NavigationIndicator.children[0].children[1].src = 'imgs/svgs/Navigator/Navigation Current Indicator.webp'
         
     }else{
         NavigatorIndicatorUp.innerHTML =  divs[nearestDivIndex - 1]['name']
         fadeUp.style.opacity = 1
-        NavigationIndicator.children[0].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.svg'
-        NavigationIndicator.children[1].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.svg'
-        NavigationIndicator.children[2].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.svg'
+        NavigationIndicator.children[0].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.webp'
+        NavigationIndicator.children[1].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.webp'
+        NavigationIndicator.children[2].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.webp'
         NavigationIndicator.children[nearestDivIndex].children[1].src = 'imgs/svgs/Navigator/Navigation Current Indicator.svg'
     }
     
     if(nearestDivIndex == 3){
         NavigatorIndicatorDown.innerHTML = '&nbsp;'
         fadeDown.style.opacity = 0
-        NavigationIndicator.children[0].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.svg'
-        NavigationIndicator.children[1].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.svg'
-        NavigationIndicator.children[2].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.svg'
-        NavigationIndicator.children[3].children[1].src = 'imgs/svgs/Navigator/Navigation Current Indicator.svg'
+        NavigationIndicator.children[0].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.webp'
+        NavigationIndicator.children[1].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.webp'
+        NavigationIndicator.children[2].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.webp'
+        NavigationIndicator.children[3].children[1].src = 'imgs/svgs/Navigator/Navigation Current Indicator.webp'
     }else{
         NavigatorIndicatorDown.innerHTML = divs[nearestDivIndex + 1]['name']
         fadeDown.style.opacity = 1
         
         
-        NavigationIndicator.children[0].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.svg'
-        NavigationIndicator.children[1].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.svg'
-        NavigationIndicator.children[2].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.svg'
-        NavigationIndicator.children[3].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.svg'
+        NavigationIndicator.children[0].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.webp'
+        NavigationIndicator.children[1].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.webp'
+        NavigationIndicator.children[2].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.webp'
+        NavigationIndicator.children[3].children[1].src = 'imgs/svgs/Navigator/Navigation Indicator.webp'
         NavigationIndicator.children[nearestDivIndex].children[1].src = 'imgs/svgs/Navigator/Navigation Current Indicator.svg'
         
         

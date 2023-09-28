@@ -15,7 +15,7 @@ p{
 }
 
 *:active{
-    cursor: url('imgs/svgs/Cursor Click Svg.svg'),auto
+    cursor: url('imgs/svgs/Cursor Click Svg.webp'),auto
 }
 
 a{
@@ -81,15 +81,15 @@ h3{
     font-weight: 300;
     text-shadow: 0px 4px 14px rgba(209, 209, 209, 0.25);
     color: #C7C7C7;
-    cursor: url("imgs/svgs/Cursor Svg.svg"), auto;
+    cursor: url("imgs/svgs/Cursor Svg.webp"), auto;
 }
 
 input:hover,textarea:hover{
-    cursor: url("imgs/svgs/Cursor Hover Input Svg.svg"), auto;
+    cursor: url("imgs/svgs/Cursor Hover Input Svg.webp"), auto;
 }
 
 button:hover{
-    cursor: url("imgs/svgs/Cursor Hover Svg.svg"), auto;
+    cursor: url("imgs/svgs/Cursor Hover Svg.webp"), auto;
 }
 
 
@@ -149,7 +149,7 @@ button:hover{
 }
 
 #NavigatorDown:hover,#NavigatorUp:hover{
-    cursor: url('imgs/svgs/Cursor Hover Svg.svg'), auto;
+    cursor: url('imgs/svgs/Cursor Hover Svg.webp'), auto;
 }
 
 #NavigationIndicator{
@@ -198,7 +198,7 @@ button:hover{
 
 #IntroDiv{
     overflow: hidden;
-    background:url('imgs/backgrounds/INTRO DIV.png');
+    background:url('imgs/backgrounds/INTRO DIV.webp');
     background-size:100% 100%;
     
     padding-block: 100px;
@@ -326,7 +326,7 @@ button:hover{
 
 
 
-    background:url('imgs/backgrounds/ABOUT ME DIV.png');
+    background:url('imgs/backgrounds/ABOUT ME DIV.webp');
     background-size:100% 100%;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -407,7 +407,7 @@ button:hover{
 
 #ProjectsDiv{
     overflow: hidden;
-    background:url('imgs/backgrounds/PROJECTS DIV.png');
+    background:url('imgs/backgrounds/PROJECTS DIV.webp');
     background-size:100% 100%;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -490,7 +490,7 @@ button:hover{
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(4,auto);
 
-    background:url('imgs/backgrounds/CONTACT ME DIV.png');
+    background:url('imgs/backgrounds/CONTACT ME DIV.webp');
     background-size:100% 100%;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -508,11 +508,11 @@ button:hover{
 }
 
 label{
-    cursor: url("imgs/svgs/Cursor Svg.svg"), auto;
+    cursor: url("imgs/svgs/Cursor Svg.webp"), auto;
 }
 
 a:hover{
-    cursor: url("imgs/svgs/Cursor Hover Svg.svg"), auto;
+    cursor: url("imgs/svgs/Cursor Hover Svg.webp"), auto;
 }
 
 #ContactMeDiv div{
@@ -693,6 +693,7 @@ form button:focus{
     z-index: 100;
     animation: rotate 5s ease infinite;
     transition: transform 0.3s ease;
+    
 }
 .star,.line{
     position: absolute;
@@ -909,7 +910,7 @@ form button:focus{
 
 
 #Navigation{
-    z-index: 1000;
+    z-index: 10000;
     top: 50%;
     left: 10px;
 }
@@ -999,38 +1000,6 @@ form button:focus{
     .line,.star{
         display: none;
     }  
-
-    .star:nth-child(1){
-        display: block;
-        right:10%
-    }
-    .star:nth-child(10){
-        display: block;
-        top:60%
-    }
-
-    .star:nth-child(3){
-        left: 0%;
-        display: block;
-        width: 40px;
-    }
-    
-    .star:nth-child(22){
-        display: block;
-        left: 20%;
-        top:4%;
-        width: 70px;
-    }
-
-    .star:nth-child(7) {
-        display: block;
-        top: 165%;
-        right: 10%;
-        height: 120px;
-      }
-
-      
-    
 
     #Navigation{
         display: none;
@@ -1200,12 +1169,15 @@ form button:focus{
       }
 
     .projectItem{
-        grid-column: span 6 
+        grid-column: span 5 
     }
 
     .projectItem div img{
         max-height: 180px;
         max-width: 200px;
+    }
+    #ContactMeDiv{
+        margin-top: -1px;
     }
 
     #ContactMeDiv h1{
@@ -1225,5 +1197,11 @@ form button:focus{
         grid-area: 4 / 1 / 4 / 6
     }
 
-  
+    #BottomImage{
+        display: none;
+    }
+
+    .spacer{
+        display: none;
+    }
 }
