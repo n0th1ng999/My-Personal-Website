@@ -1006,7 +1006,7 @@ form button:focus{
     }
 
     #IntroDiv,#ContactMeDiv,#AboutMeDiv,#ProjectsDiv{
-        
+        margin-top: -2px;
         padding: 0;
         padding: 60px 40px ;
     }
@@ -1176,9 +1176,7 @@ form button:focus{
         max-height: 180px;
         max-width: 200px;
     }
-    #ContactMeDiv{
-        margin-top: -1px;
-    }
+   
 
     #ContactMeDiv h1{
         grid-area: 1 / 1 / 1 / 6
@@ -1203,5 +1201,10 @@ form button:focus{
 
     .spacer{
         display: none;
+    }
+
+    #ContactMeDiv p a {
+        font-size: 16px;
+        align-items: center
     }
 }

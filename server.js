@@ -3,6 +3,7 @@ const app = express()
 const path = require('path');
 const nodemailer = require('nodemailer')
 const bodyParser = require('body-parser');
+const favicon = require('serve-favicon');
 const port = 3000
 require('dotenv').config(); 
 
@@ -15,7 +16,7 @@ const MailerTransport = nodemailer.createTransport({
   })
 
   
-
+app.use(favicon(path.join(__dirname, 'assets/imgs/icon/icon.png')))
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('assets'));
 app.get('/',(req,res) =>  res.sendFile(path.join(__dirname, '.assets/index.html')))
